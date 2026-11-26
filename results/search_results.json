@@ -1,0 +1,3738 @@
+{
+  "method": "50 solvable 8-puzzle states sampled from reverse-BFS exact depths 16-20; ten per depth; seed=7",
+  "heuristics": {
+    "misplaced": "nnumber of misplaced nonblank tiles",
+    "manhattan": "sum of row/column distances of non blank tiles from goal positions"
+  },
+  "dfs_node_limit": 50000,
+  "optimal_depth_distribution": {
+    "16": 10,
+    "17": 10,
+    "18": 10,
+    "19": 10,
+    "20": 10
+  },
+  "summary": {
+    "BFS": {
+      "mean_nodes": 26670.6,
+      "median_nodes": 21914.5,
+      "nodes_distribution": {
+        "min": 7525,
+        "max": 58815,
+        "sample_sd": 14877.16,
+        "q1": 14993.0,
+        "q3": 33945.5,
+        "iqr": 18952.5
+      },
+      "mean_peak_frontier": 11263.6,
+      "median_peak_frontier": 10352.5,
+      "frontier_distribution": {
+        "min": 4562,
+        "max": 18858,
+        "sample_sd": 4534.21,
+        "q1": 7887.25,
+        "q3": 14614.75,
+        "iqr": 6727.5
+      },
+      "mean_runtime_seconds": 0.05282,
+      "median_runtime_seconds": 0.042211,
+      "solved": 50,
+      "optimal": 50,
+      "optimal_rate": 1.0,
+      "mean_path_when_solved": 18
+    },
+    "UCS": {
+      "mean_nodes": 26670.6,
+      "median_nodes": 21914.5,
+      "nodes_distribution": {
+        "min": 7525,
+        "max": 58815,
+        "sample_sd": 14877.16,
+        "q1": 14993.0,
+        "q3": 33945.5,
+        "iqr": 18952.5
+      },
+      "mean_peak_frontier": 11263.6,
+      "median_peak_frontier": 10352.5,
+      "frontier_distribution": {
+        "min": 4562,
+        "max": 18858,
+        "sample_sd": 4534.21,
+        "q1": 7887.25,
+        "q3": 14614.75,
+        "iqr": 6727.5
+      },
+      "mean_runtime_seconds": 0.089782,
+      "median_runtime_seconds": 0.074208,
+      "solved": 50,
+      "optimal": 50,
+      "optimal_rate": 1.0,
+      "mean_path_when_solved": 18
+    },
+    "DFS": {
+      "mean_nodes": 42869.6,
+      "median_nodes": 50000.0,
+      "nodes_distribution": {
+        "min": 981,
+        "max": 50000,
+        "sample_sd": 15002.46,
+        "q1": 49949.0,
+        "q3": 50000.0,
+        "iqr": 51.0
+      },
+      "mean_peak_frontier": 28084.5,
+      "median_peak_frontier": 32406.0,
+      "frontier_distribution": {
+        "min": 766,
+        "max": 32491,
+        "sample_sd": 9363.12,
+        "q1": 32236.0,
+        "q3": 32489.0,
+        "iqr": 253.0
+      },
+      "mean_runtime_seconds": 0.100925,
+      "median_runtime_seconds": 0.113745,
+      "solved": 13,
+      "optimal": 0,
+      "optimal_rate": 0.0,
+      "mean_path_when_solved": 21139.38
+    },
+    "A* Manhattan": {
+      "mean_nodes": 285.2,
+      "median_nodes": 265.0,
+      "nodes_distribution": {
+        "min": 54,
+        "max": 752,
+        "sample_sd": 171.76,
+        "q1": 134.5,
+        "q3": 365.0,
+        "iqr": 230.5
+      },
+      "mean_peak_frontier": 173.6,
+      "median_peak_frontier": 164.0,
+      "frontier_distribution": {
+        "min": 36,
+        "max": 453,
+        "sample_sd": 100.3,
+        "q1": 86.25,
+        "q3": 220.5,
+        "iqr": 134.25
+      },
+      "mean_runtime_seconds": 0.001748,
+      "median_runtime_seconds": 0.001429,
+      "solved": 50,
+      "optimal": 50,
+      "optimal_rate": 1.0,
+      "mean_path_when_solved": 18
+    },
+    "A* misplaced": {
+      "mean_nodes": 1777.6,
+      "median_nodes": 1429.5,
+      "nodes_distribution": {
+        "min": 486,
+        "max": 4352,
+        "sample_sd": 1099.13,
+        "q1": 868.5,
+        "q3": 2448.75,
+        "iqr": 1580.25
+      },
+      "mean_peak_frontier": 1068.9,
+      "median_peak_frontier": 897.0,
+      "frontier_distribution": {
+        "min": 306,
+        "max": 2531,
+        "sample_sd": 636.12,
+        "q1": 534.75,
+        "q3": 1444.5,
+        "iqr": 909.75
+      },
+      "mean_runtime_seconds": 0.008444,
+      "median_runtime_seconds": 0.006652,
+      "solved": 50,
+      "optimal": 50,
+      "optimal_rate": 1.0,
+      "mean_path_when_solved": 18
+    },
+    "Greedy Manhattan": {
+      "mean_nodes": 260.6,
+      "median_nodes": 303.0,
+      "nodes_distribution": {
+        "min": 18,
+        "max": 548,
+        "sample_sd": 170.94,
+        "q1": 123.25,
+        "q3": 415.25,
+        "iqr": 292.0
+      },
+      "mean_peak_frontier": 181.0,
+      "median_peak_frontier": 217.0,
+      "frontier_distribution": {
+        "min": 14,
+        "max": 380,
+        "sample_sd": 117.74,
+        "q1": 83.75,
+        "q3": 285.25,
+        "iqr": 201.5
+      },
+      "mean_runtime_seconds": 0.001481,
+      "median_runtime_seconds": 0.001534,
+      "solved": 50,
+      "optimal": 7,
+      "optimal_rate": 0.14,
+      "mean_path_when_solved": 35.32
+    },
+    "Greedy misplaced": {
+      "mean_nodes": 450.1,
+      "median_nodes": 406.0,
+      "nodes_distribution": {
+        "min": 24,
+        "max": 1625,
+        "sample_sd": 291.99,
+        "q1": 258.75,
+        "q3": 610.0,
+        "iqr": 351.25
+      },
+      "mean_peak_frontier": 282.8,
+      "median_peak_frontier": 264.0,
+      "frontier_distribution": {
+        "min": 15,
+        "max": 993,
+        "sample_sd": 177.44,
+        "q1": 172.25,
+        "q3": 381.5,
+        "iqr": 209.25
+      },
+      "mean_runtime_seconds": 0.001999,
+      "median_runtime_seconds": 0.001852,
+      "solved": 50,
+      "optimal": 3,
+      "optimal_rate": 0.06,
+      "mean_path_when_solved": 37.36
+    }
+  },
+  "pairwise_expansion_wins": {
+    "A* Manhattan vs A* misplaced": {
+      "A* Manhattan": 50,
+      "A* misplaced": 0,
+      "ties": 0
+    },
+    "Greedy Manhattan vs Greedy misplaced": {
+      "Greedy Manhattan": 40,
+      "Greedy misplaced": 10,
+      "ties": 0
+    },
+    "A* Manhattan vs Greedy Manhattan": {
+      "A* Manhattan": 22,
+      "Greedy Manhattan": 28,
+      "ties": 0
+    },
+    "A* misplaced vs Greedy misplaced": {
+      "A* misplaced": 5,
+      "Greedy misplaced": 45,
+      "ties": 0
+    }
+  },
+  "cases": [
+    {
+      "case": 1,
+      "state": [
+        2,
+        7,
+        6,
+        4,
+        1,
+        3,
+        5,
+        0,
+        8
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 11
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 38098,
+          "peak_frontier_size": 14655,
+          "elapsed_seconds": 0.070771,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 38098,
+          "peak_frontier_size": 14655,
+          "elapsed_seconds": 0.120648,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32336,
+          "elapsed_seconds": 0.113129,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 486,
+          "peak_frontier_size": 298,
+          "elapsed_seconds": 0.002424,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2470,
+          "peak_frontier_size": 1454,
+          "elapsed_seconds": 0.009595,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 35,
+          "nodes_expanded": 418,
+          "peak_frontier_size": 286,
+          "elapsed_seconds": 0.002493,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 49,
+          "nodes_expanded": 692,
+          "peak_frontier_size": 425,
+          "elapsed_seconds": 0.004621,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 2,
+      "state": [
+        4,
+        1,
+        5,
+        6,
+        3,
+        0,
+        7,
+        8,
+        2
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 11
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 15476,
+          "peak_frontier_size": 8008,
+          "elapsed_seconds": 0.030261,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 15476,
+          "peak_frontier_size": 8008,
+          "elapsed_seconds": 0.049733,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32491,
+          "elapsed_seconds": 0.120726,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 216,
+          "peak_frontier_size": 139,
+          "elapsed_seconds": 0.001231,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 1033,
+          "peak_frontier_size": 638,
+          "elapsed_seconds": 0.00466,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 49,
+          "peak_frontier_size": 36,
+          "elapsed_seconds": 0.000217,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 21,
+          "nodes_expanded": 166,
+          "peak_frontier_size": 113,
+          "elapsed_seconds": 0.001008,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 3,
+      "state": [
+        1,
+        4,
+        3,
+        5,
+        2,
+        7,
+        8,
+        6,
+        0
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 48111,
+          "peak_frontier_size": 17289,
+          "elapsed_seconds": 0.089869,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 48111,
+          "peak_frontier_size": 17289,
+          "elapsed_seconds": 0.161042,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 7804,
+          "nodes_expanded": 8024,
+          "peak_frontier_size": 6194,
+          "elapsed_seconds": 0.018414,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 752,
+          "peak_frontier_size": 453,
+          "elapsed_seconds": 0.003451,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 3627,
+          "peak_frontier_size": 2141,
+          "elapsed_seconds": 0.01377,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 40,
+          "nodes_expanded": 347,
+          "peak_frontier_size": 245,
+          "elapsed_seconds": 0.001733,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 28,
+          "nodes_expanded": 184,
+          "peak_frontier_size": 118,
+          "elapsed_seconds": 0.000777,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 4,
+      "state": [
+        0,
+        4,
+        5,
+        3,
+        1,
+        8,
+        7,
+        6,
+        2
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 16
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 8383,
+          "peak_frontier_size": 4803,
+          "elapsed_seconds": 0.018911,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 8383,
+          "peak_frontier_size": 4803,
+          "elapsed_seconds": 0.029441,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 32634,
+          "nodes_expanded": 34477,
+          "peak_frontier_size": 24456,
+          "elapsed_seconds": 0.087422,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 86,
+          "peak_frontier_size": 46,
+          "elapsed_seconds": 0.000403,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 491,
+          "peak_frontier_size": 309,
+          "elapsed_seconds": 0.001744,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 21,
+          "peak_frontier_size": 20,
+          "elapsed_seconds": 0.000127,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 57,
+          "peak_frontier_size": 44,
+          "elapsed_seconds": 0.000281,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 5,
+      "state": [
+        1,
+        6,
+        8,
+        3,
+        0,
+        5,
+        4,
+        7,
+        2
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 14
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 13179,
+          "peak_frontier_size": 6483,
+          "elapsed_seconds": 0.027401,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 13179,
+          "peak_frontier_size": 6483,
+          "elapsed_seconds": 0.040963,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 45338,
+          "nodes_expanded": 49932,
+          "peak_frontier_size": 32444,
+          "elapsed_seconds": 0.125628,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 83,
+          "peak_frontier_size": 53,
+          "elapsed_seconds": 0.000404,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 652,
+          "peak_frontier_size": 420,
+          "elapsed_seconds": 0.002569,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 19,
+          "peak_frontier_size": 17,
+          "elapsed_seconds": 9.3e-05,
+          "optimal": true
+        },
+        "Greedy misplaced": {
+          "path_length": 22,
+          "nodes_expanded": 93,
+          "peak_frontier_size": 65,
+          "elapsed_seconds": 0.000306,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 6,
+      "state": [
+        8,
+        4,
+        1,
+        3,
+        0,
+        2,
+        5,
+        7,
+        6
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 16
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 12739,
+          "peak_frontier_size": 6390,
+          "elapsed_seconds": 0.019481,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 12739,
+          "peak_frontier_size": 6390,
+          "elapsed_seconds": 0.041183,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.13122,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 54,
+          "peak_frontier_size": 36,
+          "elapsed_seconds": 0.000273,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 586,
+          "peak_frontier_size": 357,
+          "elapsed_seconds": 0.002435,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 68,
+          "nodes_expanded": 548,
+          "peak_frontier_size": 380,
+          "elapsed_seconds": 0.003315,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 76,
+          "nodes_expanded": 1625,
+          "peak_frontier_size": 993,
+          "elapsed_seconds": 0.006646,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 7,
+      "state": [
+        5,
+        7,
+        2,
+        4,
+        8,
+        3,
+        1,
+        6,
+        0
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 12
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 24319,
+          "peak_frontier_size": 10601,
+          "elapsed_seconds": 0.040169,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 24319,
+          "peak_frontier_size": 10601,
+          "elapsed_seconds": 0.080209,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32236,
+          "elapsed_seconds": 0.103986,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 218,
+          "peak_frontier_size": 139,
+          "elapsed_seconds": 0.001564,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1240,
+          "peak_frontier_size": 757,
+          "elapsed_seconds": 0.005362,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 22,
+          "nodes_expanded": 137,
+          "peak_frontier_size": 92,
+          "elapsed_seconds": 0.000845,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 32,
+          "nodes_expanded": 286,
+          "peak_frontier_size": 183,
+          "elapsed_seconds": 0.001011,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 8,
+      "state": [
+        0,
+        5,
+        3,
+        7,
+        4,
+        2,
+        8,
+        6,
+        1
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 12
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 52183,
+          "peak_frontier_size": 17259,
+          "elapsed_seconds": 0.098938,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 52183,
+          "peak_frontier_size": 17259,
+          "elapsed_seconds": 0.153663,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32487,
+          "elapsed_seconds": 0.116309,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 489,
+          "peak_frontier_size": 288,
+          "elapsed_seconds": 0.002865,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 3326,
+          "peak_frontier_size": 1979,
+          "elapsed_seconds": 0.01324,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 28,
+          "nodes_expanded": 146,
+          "peak_frontier_size": 100,
+          "elapsed_seconds": 0.000683,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 38,
+          "nodes_expanded": 651,
+          "peak_frontier_size": 411,
+          "elapsed_seconds": 0.002175,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 9,
+      "state": [
+        2,
+        4,
+        3,
+        8,
+        5,
+        1,
+        0,
+        7,
+        6
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 21005,
+          "peak_frontier_size": 10102,
+          "elapsed_seconds": 0.031633,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 21005,
+          "peak_frontier_size": 10102,
+          "elapsed_seconds": 0.067681,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32236,
+          "elapsed_seconds": 0.114539,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 374,
+          "peak_frontier_size": 228,
+          "elapsed_seconds": 0.00163,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1524,
+          "peak_frontier_size": 937,
+          "elapsed_seconds": 0.005343,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 46,
+          "nodes_expanded": 447,
+          "peak_frontier_size": 314,
+          "elapsed_seconds": 0.001913,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 44,
+          "nodes_expanded": 709,
+          "peak_frontier_size": 452,
+          "elapsed_seconds": 0.002626,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 10,
+      "state": [
+        4,
+        7,
+        1,
+        8,
+        0,
+        5,
+        3,
+        6,
+        2
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 18
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 48480,
+          "peak_frontier_size": 18777,
+          "elapsed_seconds": 0.09261,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 48480,
+          "peak_frontier_size": 18777,
+          "elapsed_seconds": 0.166286,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.108117,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 210,
+          "peak_frontier_size": 126,
+          "elapsed_seconds": 0.001112,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 3624,
+          "peak_frontier_size": 2065,
+          "elapsed_seconds": 0.014853,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 50,
+          "nodes_expanded": 447,
+          "peak_frontier_size": 308,
+          "elapsed_seconds": 0.002466,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 46,
+          "nodes_expanded": 510,
+          "peak_frontier_size": 322,
+          "elapsed_seconds": 0.00183,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 11,
+      "state": [
+        1,
+        7,
+        4,
+        8,
+        5,
+        3,
+        2,
+        0,
+        6
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 13
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 37595,
+          "peak_frontier_size": 14649,
+          "elapsed_seconds": 0.072171,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 37595,
+          "peak_frontier_size": 14649,
+          "elapsed_seconds": 0.129607,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 12559,
+          "nodes_expanded": 12935,
+          "peak_frontier_size": 9848,
+          "elapsed_seconds": 0.023521,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 267,
+          "peak_frontier_size": 168,
+          "elapsed_seconds": 0.001151,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2314,
+          "peak_frontier_size": 1408,
+          "elapsed_seconds": 0.011715,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 53,
+          "nodes_expanded": 361,
+          "peak_frontier_size": 251,
+          "elapsed_seconds": 0.00176,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 47,
+          "nodes_expanded": 300,
+          "peak_frontier_size": 190,
+          "elapsed_seconds": 0.001005,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 12,
+      "state": [
+        7,
+        4,
+        3,
+        2,
+        5,
+        6,
+        1,
+        8,
+        0
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 4,
+        "manhattan": 8
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 19431,
+          "peak_frontier_size": 9865,
+          "elapsed_seconds": 0.043354,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 19431,
+          "peak_frontier_size": 9865,
+          "elapsed_seconds": 0.059397,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32236,
+          "elapsed_seconds": 0.119623,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 316,
+          "peak_frontier_size": 199,
+          "elapsed_seconds": 0.001499,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1354,
+          "peak_frontier_size": 809,
+          "elapsed_seconds": 0.0084,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 24,
+          "nodes_expanded": 141,
+          "peak_frontier_size": 110,
+          "elapsed_seconds": 0.000981,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 32,
+          "nodes_expanded": 443,
+          "peak_frontier_size": 267,
+          "elapsed_seconds": 0.001999,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 13,
+      "state": [
+        1,
+        0,
+        3,
+        8,
+        5,
+        6,
+        4,
+        7,
+        2
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 4,
+        "manhattan": 7
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 14832,
+          "peak_frontier_size": 7847,
+          "elapsed_seconds": 0.030887,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 14832,
+          "peak_frontier_size": 7847,
+          "elapsed_seconds": 0.049197,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32488,
+          "elapsed_seconds": 0.122811,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 306,
+          "peak_frontier_size": 180,
+          "elapsed_seconds": 0.002519,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 1087,
+          "peak_frontier_size": 660,
+          "elapsed_seconds": 0.006921,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 44,
+          "peak_frontier_size": 34,
+          "elapsed_seconds": 0.000521,
+          "optimal": true
+        },
+        "Greedy misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 170,
+          "peak_frontier_size": 106,
+          "elapsed_seconds": 0.001136,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "case": 14,
+      "state": [
+        6,
+        1,
+        4,
+        7,
+        2,
+        3,
+        0,
+        5,
+        8
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 12
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 7525,
+          "peak_frontier_size": 4562,
+          "elapsed_seconds": 0.014639,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 7525,
+          "peak_frontier_size": 4562,
+          "elapsed_seconds": 0.018693,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32236,
+          "elapsed_seconds": 0.135526,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 77,
+          "peak_frontier_size": 52,
+          "elapsed_seconds": 0.000527,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 537,
+          "peak_frontier_size": 348,
+          "elapsed_seconds": 0.002052,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 34,
+          "nodes_expanded": 397,
+          "peak_frontier_size": 276,
+          "elapsed_seconds": 0.001933,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 42,
+          "nodes_expanded": 611,
+          "peak_frontier_size": 385,
+          "elapsed_seconds": 0.002592,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 15,
+      "state": [
+        1,
+        8,
+        0,
+        5,
+        6,
+        3,
+        4,
+        2,
+        7
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 8575,
+          "peak_frontier_size": 4863,
+          "elapsed_seconds": 0.016603,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 8575,
+          "peak_frontier_size": 4863,
+          "elapsed_seconds": 0.034539,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32406,
+          "elapsed_seconds": 0.121604,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 117,
+          "peak_frontier_size": 78,
+          "elapsed_seconds": 0.000613,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 555,
+          "peak_frontier_size": 369,
+          "elapsed_seconds": 0.002237,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 34,
+          "nodes_expanded": 133,
+          "peak_frontier_size": 83,
+          "elapsed_seconds": 0.000694,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 34,
+          "nodes_expanded": 212,
+          "peak_frontier_size": 141,
+          "elapsed_seconds": 0.000721,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 16,
+      "state": [
+        8,
+        4,
+        2,
+        5,
+        0,
+        6,
+        3,
+        1,
+        7
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 16
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 51185,
+          "peak_frontier_size": 18787,
+          "elapsed_seconds": 0.111998,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 51185,
+          "peak_frontier_size": 18787,
+          "elapsed_seconds": 0.201174,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.120127,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 314,
+          "peak_frontier_size": 180,
+          "elapsed_seconds": 0.001419,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 3625,
+          "peak_frontier_size": 2081,
+          "elapsed_seconds": 0.01413,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 38,
+          "nodes_expanded": 325,
+          "peak_frontier_size": 233,
+          "elapsed_seconds": 0.001403,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 40,
+          "nodes_expanded": 607,
+          "peak_frontier_size": 371,
+          "elapsed_seconds": 0.00343,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 17,
+      "state": [
+        1,
+        8,
+        5,
+        6,
+        0,
+        2,
+        7,
+        3,
+        4
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 14
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 48544,
+          "peak_frontier_size": 18787,
+          "elapsed_seconds": 0.107402,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 48544,
+          "peak_frontier_size": 18787,
+          "elapsed_seconds": 0.190412,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.121439,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 469,
+          "peak_frontier_size": 291,
+          "elapsed_seconds": 0.003639,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 4200,
+          "peak_frontier_size": 2468,
+          "elapsed_seconds": 0.024424,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 38,
+          "nodes_expanded": 138,
+          "peak_frontier_size": 89,
+          "elapsed_seconds": 0.000715,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 36,
+          "nodes_expanded": 371,
+          "peak_frontier_size": 238,
+          "elapsed_seconds": 0.001618,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 18,
+      "state": [
+        2,
+        6,
+        3,
+        1,
+        7,
+        4,
+        0,
+        5,
+        8
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 25062,
+          "peak_frontier_size": 10678,
+          "elapsed_seconds": 0.04086,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 25062,
+          "peak_frontier_size": 10678,
+          "elapsed_seconds": 0.080255,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32236,
+          "elapsed_seconds": 0.114239,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 337,
+          "peak_frontier_size": 201,
+          "elapsed_seconds": 0.001513,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1462,
+          "peak_frontier_size": 940,
+          "elapsed_seconds": 0.00524,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 52,
+          "nodes_expanded": 455,
+          "peak_frontier_size": 319,
+          "elapsed_seconds": 0.001964,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 24,
+          "nodes_expanded": 86,
+          "peak_frontier_size": 63,
+          "elapsed_seconds": 0.000335,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 19,
+      "state": [
+        2,
+        0,
+        8,
+        1,
+        3,
+        5,
+        6,
+        7,
+        4
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 15
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 30520,
+          "peak_frontier_size": 14181,
+          "elapsed_seconds": 0.065723,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 30520,
+          "peak_frontier_size": 14181,
+          "elapsed_seconds": 0.128387,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32488,
+          "elapsed_seconds": 0.1172,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 245,
+          "peak_frontier_size": 154,
+          "elapsed_seconds": 0.001419,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2287,
+          "peak_frontier_size": 1399,
+          "elapsed_seconds": 0.009788,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 35,
+          "nodes_expanded": 123,
+          "peak_frontier_size": 77,
+          "elapsed_seconds": 0.000558,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 43,
+          "nodes_expanded": 402,
+          "peak_frontier_size": 261,
+          "elapsed_seconds": 0.001988,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 20,
+      "state": [
+        1,
+        7,
+        5,
+        3,
+        2,
+        0,
+        4,
+        8,
+        6
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 11
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 17482,
+          "peak_frontier_size": 8297,
+          "elapsed_seconds": 0.040484,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 17482,
+          "peak_frontier_size": 8297,
+          "elapsed_seconds": 0.050141,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32491,
+          "elapsed_seconds": 0.107374,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 189,
+          "peak_frontier_size": 113,
+          "elapsed_seconds": 0.001074,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 965,
+          "peak_frontier_size": 599,
+          "elapsed_seconds": 0.003793,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 21,
+          "nodes_expanded": 77,
+          "peak_frontier_size": 55,
+          "elapsed_seconds": 0.000328,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 31,
+          "nodes_expanded": 410,
+          "peak_frontier_size": 268,
+          "elapsed_seconds": 0.001755,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 21,
+      "state": [
+        2,
+        3,
+        6,
+        5,
+        1,
+        8,
+        0,
+        7,
+        4
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 12
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 8975,
+          "peak_frontier_size": 4972,
+          "elapsed_seconds": 0.018246,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 8975,
+          "peak_frontier_size": 4972,
+          "elapsed_seconds": 0.034828,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32236,
+          "elapsed_seconds": 0.113691,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 151,
+          "peak_frontier_size": 102,
+          "elapsed_seconds": 0.000735,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 588,
+          "peak_frontier_size": 369,
+          "elapsed_seconds": 0.002166,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 162,
+          "peak_frontier_size": 107,
+          "elapsed_seconds": 0.000685,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 36,
+          "nodes_expanded": 688,
+          "peak_frontier_size": 430,
+          "elapsed_seconds": 0.002508,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 22,
+      "state": [
+        3,
+        5,
+        6,
+        1,
+        2,
+        8,
+        0,
+        4,
+        7
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 12
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 8251,
+          "peak_frontier_size": 4775,
+          "elapsed_seconds": 0.012803,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 8251,
+          "peak_frontier_size": 4775,
+          "elapsed_seconds": 0.019453,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 5574,
+          "nodes_expanded": 5730,
+          "peak_frontier_size": 4443,
+          "elapsed_seconds": 0.012844,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 104,
+          "peak_frontier_size": 68,
+          "elapsed_seconds": 0.001196,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 486,
+          "peak_frontier_size": 306,
+          "elapsed_seconds": 0.003127,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 18,
+          "peak_frontier_size": 14,
+          "elapsed_seconds": 0.000149,
+          "optimal": true
+        },
+        "Greedy misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 24,
+          "peak_frontier_size": 15,
+          "elapsed_seconds": 0.000104,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "case": 23,
+      "state": [
+        5,
+        8,
+        4,
+        2,
+        7,
+        0,
+        1,
+        6,
+        3
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 17
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 32946,
+          "peak_frontier_size": 14556,
+          "elapsed_seconds": 0.062997,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 32946,
+          "peak_frontier_size": 14556,
+          "elapsed_seconds": 0.105006,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32491,
+          "elapsed_seconds": 0.111166,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 126,
+          "peak_frontier_size": 80,
+          "elapsed_seconds": 0.000568,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2011,
+          "peak_frontier_size": 1235,
+          "elapsed_seconds": 0.009553,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 27,
+          "peak_frontier_size": 24,
+          "elapsed_seconds": 0.000146,
+          "optimal": true
+        },
+        "Greedy misplaced": {
+          "path_length": 47,
+          "nodes_expanded": 339,
+          "peak_frontier_size": 221,
+          "elapsed_seconds": 0.001411,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 24,
+      "state": [
+        1,
+        5,
+        4,
+        6,
+        0,
+        3,
+        7,
+        8,
+        2
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 5,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 58815,
+          "peak_frontier_size": 18858,
+          "elapsed_seconds": 0.125315,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 58815,
+          "peak_frontier_size": 18858,
+          "elapsed_seconds": 0.223268,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.138406,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 740,
+          "peak_frontier_size": 417,
+          "elapsed_seconds": 0.003765,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 4352,
+          "peak_frontier_size": 2531,
+          "elapsed_seconds": 0.027546,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 34,
+          "nodes_expanded": 382,
+          "peak_frontier_size": 264,
+          "elapsed_seconds": 0.002712,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 22,
+          "nodes_expanded": 330,
+          "peak_frontier_size": 215,
+          "elapsed_seconds": 0.002849,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 25,
+      "state": [
+        1,
+        6,
+        2,
+        8,
+        4,
+        5,
+        3,
+        0,
+        7
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 13
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 34082,
+          "peak_frontier_size": 14440,
+          "elapsed_seconds": 0.068273,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 34082,
+          "peak_frontier_size": 14440,
+          "elapsed_seconds": 0.119203,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 32031,
+          "nodes_expanded": 33901,
+          "peak_frontier_size": 24016,
+          "elapsed_seconds": 0.079448,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 326,
+          "peak_frontier_size": 184,
+          "elapsed_seconds": 0.00144,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2338,
+          "peak_frontier_size": 1406,
+          "elapsed_seconds": 0.011076,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 41,
+          "nodes_expanded": 423,
+          "peak_frontier_size": 291,
+          "elapsed_seconds": 0.002218,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 41,
+          "nodes_expanded": 444,
+          "peak_frontier_size": 281,
+          "elapsed_seconds": 0.002145,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 26,
+      "state": [
+        3,
+        5,
+        2,
+        1,
+        4,
+        7,
+        8,
+        0,
+        6
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 11
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 15893,
+          "peak_frontier_size": 8044,
+          "elapsed_seconds": 0.032145,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 15893,
+          "peak_frontier_size": 8044,
+          "elapsed_seconds": 0.046894,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32336,
+          "elapsed_seconds": 0.123546,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 169,
+          "peak_frontier_size": 108,
+          "elapsed_seconds": 0.000831,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 918,
+          "peak_frontier_size": 571,
+          "elapsed_seconds": 0.00501,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 33,
+          "nodes_expanded": 341,
+          "peak_frontier_size": 240,
+          "elapsed_seconds": 0.002908,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 35,
+          "nodes_expanded": 267,
+          "peak_frontier_size": 173,
+          "elapsed_seconds": 0.001357,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 27,
+      "state": [
+        4,
+        2,
+        0,
+        7,
+        5,
+        1,
+        8,
+        3,
+        6
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 20276,
+          "peak_frontier_size": 9991,
+          "elapsed_seconds": 0.043977,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 20276,
+          "peak_frontier_size": 9991,
+          "elapsed_seconds": 0.074169,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 7032,
+          "nodes_expanded": 7215,
+          "peak_frontier_size": 5589,
+          "elapsed_seconds": 0.014786,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 356,
+          "peak_frontier_size": 216,
+          "elapsed_seconds": 0.001793,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1361,
+          "peak_frontier_size": 798,
+          "elapsed_seconds": 0.00542,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 34,
+          "nodes_expanded": 306,
+          "peak_frontier_size": 222,
+          "elapsed_seconds": 0.002328,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 50,
+          "nodes_expanded": 533,
+          "peak_frontier_size": 327,
+          "elapsed_seconds": 0.001901,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 28,
+      "state": [
+        1,
+        2,
+        8,
+        0,
+        3,
+        7,
+        4,
+        5,
+        6
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 11
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 29206,
+          "peak_frontier_size": 14087,
+          "elapsed_seconds": 0.089579,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 29206,
+          "peak_frontier_size": 14087,
+          "elapsed_seconds": 0.125647,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32491,
+          "elapsed_seconds": 0.12206,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 415,
+          "peak_frontier_size": 249,
+          "elapsed_seconds": 0.002292,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2385,
+          "peak_frontier_size": 1416,
+          "elapsed_seconds": 0.013926,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 35,
+          "nodes_expanded": 142,
+          "peak_frontier_size": 92,
+          "elapsed_seconds": 0.001349,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 35,
+          "nodes_expanded": 267,
+          "peak_frontier_size": 172,
+          "elapsed_seconds": 0.001322,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 29,
+      "state": [
+        1,
+        5,
+        3,
+        8,
+        6,
+        0,
+        4,
+        7,
+        2
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 9
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 19556,
+          "peak_frontier_size": 8567,
+          "elapsed_seconds": 0.041069,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 19556,
+          "peak_frontier_size": 8567,
+          "elapsed_seconds": 0.072524,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32491,
+          "elapsed_seconds": 0.1138,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 273,
+          "peak_frontier_size": 167,
+          "elapsed_seconds": 0.00162,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 1093,
+          "peak_frontier_size": 677,
+          "elapsed_seconds": 0.004012,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 46,
+          "peak_frontier_size": 35,
+          "elapsed_seconds": 0.0002,
+          "optimal": true
+        },
+        "Greedy misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 162,
+          "peak_frontier_size": 106,
+          "elapsed_seconds": 0.000767,
+          "optimal": true
+        }
+      }
+    },
+    {
+      "case": 30,
+      "state": [
+        8,
+        7,
+        1,
+        2,
+        6,
+        3,
+        4,
+        0,
+        5
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 15
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 13443,
+          "peak_frontier_size": 7532,
+          "elapsed_seconds": 0.022394,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 13443,
+          "peak_frontier_size": 7532,
+          "elapsed_seconds": 0.043368,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32336,
+          "elapsed_seconds": 0.10562,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 76,
+          "peak_frontier_size": 50,
+          "elapsed_seconds": 0.000599,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 795,
+          "peak_frontier_size": 494,
+          "elapsed_seconds": 0.00433,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 51,
+          "nodes_expanded": 495,
+          "peak_frontier_size": 335,
+          "elapsed_seconds": 0.00255,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 39,
+          "nodes_expanded": 279,
+          "peak_frontier_size": 174,
+          "elapsed_seconds": 0.000994,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 31,
+      "state": [
+        4,
+        7,
+        5,
+        1,
+        0,
+        2,
+        8,
+        6,
+        3
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 14
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 9510,
+          "peak_frontier_size": 5588,
+          "elapsed_seconds": 0.017697,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 9510,
+          "peak_frontier_size": 5588,
+          "elapsed_seconds": 0.021858,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.11646,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 110,
+          "peak_frontier_size": 73,
+          "elapsed_seconds": 0.000516,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 647,
+          "peak_frontier_size": 395,
+          "elapsed_seconds": 0.002355,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 32,
+          "nodes_expanded": 300,
+          "peak_frontier_size": 218,
+          "elapsed_seconds": 0.001344,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 58,
+          "nodes_expanded": 757,
+          "peak_frontier_size": 458,
+          "elapsed_seconds": 0.003816,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 32,
+      "state": [
+        1,
+        5,
+        2,
+        6,
+        0,
+        8,
+        3,
+        4,
+        7
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 14
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 13414,
+          "peak_frontier_size": 6520,
+          "elapsed_seconds": 0.02642,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 13414,
+          "peak_frontier_size": 6520,
+          "elapsed_seconds": 0.044053,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.1148,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 70,
+          "peak_frontier_size": 48,
+          "elapsed_seconds": 0.000357,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 625,
+          "peak_frontier_size": 399,
+          "elapsed_seconds": 0.002457,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 48,
+          "nodes_expanded": 389,
+          "peak_frontier_size": 270,
+          "elapsed_seconds": 0.002726,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 40,
+          "nodes_expanded": 256,
+          "peak_frontier_size": 173,
+          "elapsed_seconds": 0.000862,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 33,
+      "state": [
+        1,
+        7,
+        2,
+        4,
+        3,
+        8,
+        5,
+        0,
+        6
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 11
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 19173,
+          "peak_frontier_size": 8529,
+          "elapsed_seconds": 0.036494,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 19173,
+          "peak_frontier_size": 8529,
+          "elapsed_seconds": 0.059255,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 44423,
+          "nodes_expanded": 48960,
+          "peak_frontier_size": 31875,
+          "elapsed_seconds": 0.116774,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 220,
+          "peak_frontier_size": 145,
+          "elapsed_seconds": 0.001112,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 1015,
+          "peak_frontier_size": 610,
+          "elapsed_seconds": 0.004519,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 37,
+          "nodes_expanded": 309,
+          "peak_frontier_size": 216,
+          "elapsed_seconds": 0.001889,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 33,
+          "nodes_expanded": 519,
+          "peak_frontier_size": 325,
+          "elapsed_seconds": 0.001953,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 34,
+      "state": [
+        6,
+        8,
+        2,
+        1,
+        0,
+        3,
+        4,
+        5,
+        7
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 12
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 22304,
+          "peak_frontier_size": 11307,
+          "elapsed_seconds": 0.056437,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 22304,
+          "peak_frontier_size": 11307,
+          "elapsed_seconds": 0.074246,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.124899,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 263,
+          "peak_frontier_size": 148,
+          "elapsed_seconds": 0.001383,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1703,
+          "peak_frontier_size": 1035,
+          "elapsed_seconds": 0.006863,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 24,
+          "nodes_expanded": 48,
+          "peak_frontier_size": 37,
+          "elapsed_seconds": 0.000222,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 46,
+          "nodes_expanded": 526,
+          "peak_frontier_size": 337,
+          "elapsed_seconds": 0.002327,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 35,
+      "state": [
+        4,
+        2,
+        0,
+        1,
+        5,
+        3,
+        7,
+        6,
+        8
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 5,
+        "manhattan": 6
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 23779,
+          "peak_frontier_size": 10520,
+          "elapsed_seconds": 0.050495,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 23779,
+          "peak_frontier_size": 10520,
+          "elapsed_seconds": 0.068127,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32406,
+          "elapsed_seconds": 0.10711,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 542,
+          "peak_frontier_size": 317,
+          "elapsed_seconds": 0.00245,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1664,
+          "peak_frontier_size": 1055,
+          "elapsed_seconds": 0.008768,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 38,
+          "nodes_expanded": 548,
+          "peak_frontier_size": 366,
+          "elapsed_seconds": 0.003575,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 38,
+          "nodes_expanded": 217,
+          "peak_frontier_size": 141,
+          "elapsed_seconds": 0.000759,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 36,
+      "state": [
+        3,
+        1,
+        2,
+        4,
+        8,
+        0,
+        7,
+        6,
+        5
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 9
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 32235,
+          "peak_frontier_size": 14455,
+          "elapsed_seconds": 0.067505,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 32235,
+          "peak_frontier_size": 14455,
+          "elapsed_seconds": 0.106041,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32491,
+          "elapsed_seconds": 0.11476,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 561,
+          "peak_frontier_size": 344,
+          "elapsed_seconds": 0.002748,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2589,
+          "peak_frontier_size": 1529,
+          "elapsed_seconds": 0.015531,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 27,
+          "nodes_expanded": 317,
+          "peak_frontier_size": 224,
+          "elapsed_seconds": 0.001929,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 29,
+          "nodes_expanded": 744,
+          "peak_frontier_size": 463,
+          "elapsed_seconds": 0.003416,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 37,
+      "state": [
+        3,
+        6,
+        5,
+        1,
+        2,
+        0,
+        4,
+        8,
+        7
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 11
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 29397,
+          "peak_frontier_size": 14110,
+          "elapsed_seconds": 0.054328,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 29397,
+          "peak_frontier_size": 14110,
+          "elapsed_seconds": 0.086134,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 14479,
+          "nodes_expanded": 14912,
+          "peak_frontier_size": 11378,
+          "elapsed_seconds": 0.036692,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 522,
+          "peak_frontier_size": 312,
+          "elapsed_seconds": 0.002425,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2331,
+          "peak_frontier_size": 1385,
+          "elapsed_seconds": 0.009268,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 41,
+          "nodes_expanded": 430,
+          "peak_frontier_size": 299,
+          "elapsed_seconds": 0.002273,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 39,
+          "nodes_expanded": 503,
+          "peak_frontier_size": 320,
+          "elapsed_seconds": 0.002453,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 38,
+      "state": [
+        6,
+        2,
+        3,
+        4,
+        8,
+        5,
+        0,
+        1,
+        7
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 5,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 54336,
+          "peak_frontier_size": 17259,
+          "elapsed_seconds": 0.114131,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 54336,
+          "peak_frontier_size": 17259,
+          "elapsed_seconds": 0.172304,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32236,
+          "elapsed_seconds": 0.104885,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 548,
+          "peak_frontier_size": 332,
+          "elapsed_seconds": 0.002989,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 3247,
+          "peak_frontier_size": 1880,
+          "elapsed_seconds": 0.014578,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 32,
+          "nodes_expanded": 124,
+          "peak_frontier_size": 86,
+          "elapsed_seconds": 0.0006,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 34,
+          "nodes_expanded": 292,
+          "peak_frontier_size": 183,
+          "elapsed_seconds": 0.001418,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 39,
+      "state": [
+        2,
+        8,
+        3,
+        4,
+        7,
+        0,
+        5,
+        6,
+        1
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 13
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 33011,
+          "peak_frontier_size": 14560,
+          "elapsed_seconds": 0.060363,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 33011,
+          "peak_frontier_size": 14560,
+          "elapsed_seconds": 0.115478,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 4301,
+          "nodes_expanded": 4412,
+          "peak_frontier_size": 3436,
+          "elapsed_seconds": 0.00912,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 293,
+          "peak_frontier_size": 185,
+          "elapsed_seconds": 0.001559,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2331,
+          "peak_frontier_size": 1407,
+          "elapsed_seconds": 0.00979,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 57,
+          "peak_frontier_size": 44,
+          "elapsed_seconds": 0.000312,
+          "optimal": true
+        },
+        "Greedy misplaced": {
+          "path_length": 53,
+          "nodes_expanded": 547,
+          "peak_frontier_size": 337,
+          "elapsed_seconds": 0.002802,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 40,
+      "state": [
+        0,
+        1,
+        2,
+        5,
+        3,
+        8,
+        6,
+        4,
+        7
+      ],
+      "optimal_depth": 16,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 14
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 16,
+          "nodes_expanded": 8122,
+          "peak_frontier_size": 4730,
+          "elapsed_seconds": 0.015362,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 16,
+          "nodes_expanded": 8122,
+          "peak_frontier_size": 4730,
+          "elapsed_seconds": 0.020055,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 954,
+          "nodes_expanded": 981,
+          "peak_frontier_size": 766,
+          "elapsed_seconds": 0.001716,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 16,
+          "nodes_expanded": 71,
+          "peak_frontier_size": 51,
+          "elapsed_seconds": 0.000319,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 16,
+          "nodes_expanded": 487,
+          "peak_frontier_size": 310,
+          "elapsed_seconds": 0.001916,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 42,
+          "nodes_expanded": 407,
+          "peak_frontier_size": 283,
+          "elapsed_seconds": 0.001847,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 30,
+          "nodes_expanded": 323,
+          "peak_frontier_size": 205,
+          "elapsed_seconds": 0.001413,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 41,
+      "state": [
+        8,
+        5,
+        0,
+        2,
+        3,
+        4,
+        7,
+        1,
+        6
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 14
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 51520,
+          "peak_frontier_size": 17289,
+          "elapsed_seconds": 0.099584,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 51520,
+          "peak_frontier_size": 17289,
+          "elapsed_seconds": 0.161949,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32406,
+          "elapsed_seconds": 0.107944,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 314,
+          "peak_frontier_size": 195,
+          "elapsed_seconds": 0.001398,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 3272,
+          "peak_frontier_size": 1956,
+          "elapsed_seconds": 0.016536,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 60,
+          "nodes_expanded": 520,
+          "peak_frontier_size": 356,
+          "elapsed_seconds": 0.002437,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 46,
+          "nodes_expanded": 832,
+          "peak_frontier_size": 490,
+          "elapsed_seconds": 0.003445,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 42,
+      "state": [
+        5,
+        4,
+        2,
+        0,
+        8,
+        6,
+        1,
+        3,
+        7
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 13
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 18846,
+          "peak_frontier_size": 8500,
+          "elapsed_seconds": 0.035686,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 18846,
+          "peak_frontier_size": 8500,
+          "elapsed_seconds": 0.062658,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 30097,
+          "nodes_expanded": 31581,
+          "peak_frontier_size": 22754,
+          "elapsed_seconds": 0.073157,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 128,
+          "peak_frontier_size": 78,
+          "elapsed_seconds": 0.000816,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 814,
+          "peak_frontier_size": 491,
+          "elapsed_seconds": 0.003348,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 41,
+          "nodes_expanded": 317,
+          "peak_frontier_size": 230,
+          "elapsed_seconds": 0.001666,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 53,
+          "nodes_expanded": 1105,
+          "peak_frontier_size": 688,
+          "elapsed_seconds": 0.003933,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 43,
+      "state": [
+        7,
+        0,
+        5,
+        1,
+        4,
+        2,
+        8,
+        3,
+        6
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 13
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 14059,
+          "peak_frontier_size": 7682,
+          "elapsed_seconds": 0.023286,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 14059,
+          "peak_frontier_size": 7682,
+          "elapsed_seconds": 0.046562,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32488,
+          "elapsed_seconds": 0.108728,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 177,
+          "peak_frontier_size": 114,
+          "elapsed_seconds": 0.001586,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 927,
+          "peak_frontier_size": 561,
+          "elapsed_seconds": 0.00574,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 63,
+          "nodes_expanded": 447,
+          "peak_frontier_size": 311,
+          "elapsed_seconds": 0.003597,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 43,
+          "nodes_expanded": 616,
+          "peak_frontier_size": 389,
+          "elapsed_seconds": 0.003053,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 44,
+      "state": [
+        3,
+        0,
+        6,
+        1,
+        8,
+        5,
+        2,
+        4,
+        7
+      ],
+      "optimal_depth": 17,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 13
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 17,
+          "nodes_expanded": 17302,
+          "peak_frontier_size": 8292,
+          "elapsed_seconds": 0.02551,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 17,
+          "nodes_expanded": 17302,
+          "peak_frontier_size": 8292,
+          "elapsed_seconds": 0.05329,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32488,
+          "elapsed_seconds": 0.142391,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 17,
+          "nodes_expanded": 129,
+          "peak_frontier_size": 81,
+          "elapsed_seconds": 0.000631,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 17,
+          "nodes_expanded": 852,
+          "peak_frontier_size": 526,
+          "elapsed_seconds": 0.003229,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 29,
+          "nodes_expanded": 122,
+          "peak_frontier_size": 89,
+          "elapsed_seconds": 0.000551,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 45,
+          "nodes_expanded": 225,
+          "peak_frontier_size": 152,
+          "elapsed_seconds": 0.000821,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 45,
+      "state": [
+        1,
+        3,
+        6,
+        5,
+        2,
+        7,
+        0,
+        8,
+        4
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 21525,
+          "peak_frontier_size": 10185,
+          "elapsed_seconds": 0.037875,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 21525,
+          "peak_frontier_size": 10185,
+          "elapsed_seconds": 0.079908,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": 37586,
+          "nodes_expanded": 40419,
+          "peak_frontier_size": 27661,
+          "elapsed_seconds": 0.098171,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 307,
+          "peak_frontier_size": 186,
+          "elapsed_seconds": 0.001541,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1397,
+          "peak_frontier_size": 856,
+          "elapsed_seconds": 0.005317,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 43,
+          "peak_frontier_size": 30,
+          "elapsed_seconds": 0.000194,
+          "optimal": true
+        },
+        "Greedy misplaced": {
+          "path_length": 32,
+          "nodes_expanded": 908,
+          "peak_frontier_size": 579,
+          "elapsed_seconds": 0.005646,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 46,
+      "state": [
+        0,
+        8,
+        1,
+        4,
+        2,
+        3,
+        6,
+        5,
+        7
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 12
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 53180,
+          "peak_frontier_size": 17259,
+          "elapsed_seconds": 0.098753,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 53180,
+          "peak_frontier_size": 17259,
+          "elapsed_seconds": 0.202589,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32487,
+          "elapsed_seconds": 0.111902,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 299,
+          "peak_frontier_size": 181,
+          "elapsed_seconds": 0.012383,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 2992,
+          "peak_frontier_size": 1800,
+          "elapsed_seconds": 0.019977,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 48,
+          "nodes_expanded": 250,
+          "peak_frontier_size": 155,
+          "elapsed_seconds": 0.002641,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 30,
+          "nodes_expanded": 289,
+          "peak_frontier_size": 176,
+          "elapsed_seconds": 0.000957,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 47,
+      "state": [
+        2,
+        4,
+        5,
+        0,
+        8,
+        3,
+        7,
+        1,
+        6
+      ],
+      "optimal_depth": 19,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 11
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 19,
+          "nodes_expanded": 33536,
+          "peak_frontier_size": 14633,
+          "elapsed_seconds": 0.059933,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 19,
+          "nodes_expanded": 33536,
+          "peak_frontier_size": 14633,
+          "elapsed_seconds": 0.103346,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32491,
+          "elapsed_seconds": 0.13256,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 19,
+          "nodes_expanded": 480,
+          "peak_frontier_size": 288,
+          "elapsed_seconds": 0.002788,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 19,
+          "nodes_expanded": 2558,
+          "peak_frontier_size": 1562,
+          "elapsed_seconds": 0.01153,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 55,
+          "nodes_expanded": 507,
+          "peak_frontier_size": 347,
+          "elapsed_seconds": 0.002369,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 41,
+          "nodes_expanded": 736,
+          "peak_frontier_size": 439,
+          "elapsed_seconds": 0.002654,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 48,
+      "state": [
+        7,
+        5,
+        3,
+        2,
+        0,
+        4,
+        8,
+        1,
+        6
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 7,
+        "manhattan": 12
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 27787,
+          "peak_frontier_size": 11882,
+          "elapsed_seconds": 0.050106,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 27787,
+          "peak_frontier_size": 11882,
+          "elapsed_seconds": 0.088048,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32489,
+          "elapsed_seconds": 0.108375,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 260,
+          "peak_frontier_size": 157,
+          "elapsed_seconds": 0.00151,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1696,
+          "peak_frontier_size": 1034,
+          "elapsed_seconds": 0.007066,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 32,
+          "nodes_expanded": 183,
+          "peak_frontier_size": 128,
+          "elapsed_seconds": 0.000989,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 32,
+          "nodes_expanded": 540,
+          "peak_frontier_size": 336,
+          "elapsed_seconds": 0.002215,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 49,
+      "state": [
+        0,
+        6,
+        2,
+        5,
+        1,
+        4,
+        7,
+        8,
+        3
+      ],
+      "optimal_depth": 18,
+      "heuristics": {
+        "misplaced": 6,
+        "manhattan": 10
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 18,
+          "nodes_expanded": 19574,
+          "peak_frontier_size": 9884,
+          "elapsed_seconds": 0.039662,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 18,
+          "nodes_expanded": 19574,
+          "peak_frontier_size": 9884,
+          "elapsed_seconds": 0.057994,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32487,
+          "elapsed_seconds": 0.131669,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 18,
+          "nodes_expanded": 257,
+          "peak_frontier_size": 161,
+          "elapsed_seconds": 0.001338,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 18,
+          "nodes_expanded": 1360,
+          "peak_frontier_size": 857,
+          "elapsed_seconds": 0.006441,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 38,
+          "nodes_expanded": 137,
+          "peak_frontier_size": 88,
+          "elapsed_seconds": 0.000804,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 38,
+          "nodes_expanded": 227,
+          "peak_frontier_size": 148,
+          "elapsed_seconds": 0.000926,
+          "optimal": false
+        }
+      }
+    },
+    {
+      "case": 50,
+      "state": [
+        7,
+        4,
+        2,
+        6,
+        3,
+        8,
+        1,
+        5,
+        0
+      ],
+      "optimal_depth": 20,
+      "heuristics": {
+        "misplaced": 8,
+        "manhattan": 14
+      },
+      "methods": {
+        "BFS": {
+          "path_length": 20,
+          "nodes_expanded": 46752,
+          "peak_frontier_size": 17289,
+          "elapsed_seconds": 0.090402,
+          "optimal": true
+        },
+        "UCS": {
+          "path_length": 20,
+          "nodes_expanded": 46752,
+          "peak_frontier_size": 17289,
+          "elapsed_seconds": 0.148207,
+          "optimal": true
+        },
+        "DFS": {
+          "path_length": null,
+          "nodes_expanded": 50000,
+          "peak_frontier_size": 32236,
+          "elapsed_seconds": 0.105828,
+          "optimal": false
+        },
+        "A* Manhattan": {
+          "path_length": 20,
+          "nodes_expanded": 368,
+          "peak_frontier_size": 222,
+          "elapsed_seconds": 0.001969,
+          "optimal": true
+        },
+        "A* misplaced": {
+          "path_length": 20,
+          "nodes_expanded": 3086,
+          "peak_frontier_size": 1858,
+          "elapsed_seconds": 0.018553,
+          "optimal": true
+        },
+        "Greedy Manhattan": {
+          "path_length": 54,
+          "nodes_expanded": 459,
+          "peak_frontier_size": 322,
+          "elapsed_seconds": 0.002111,
+          "optimal": false
+        },
+        "Greedy misplaced": {
+          "path_length": 50,
+          "nodes_expanded": 425,
+          "peak_frontier_size": 271,
+          "elapsed_seconds": 0.001873,
+          "optimal": false
+        }
+      }
+    }
+  ],
+  "": []
+}

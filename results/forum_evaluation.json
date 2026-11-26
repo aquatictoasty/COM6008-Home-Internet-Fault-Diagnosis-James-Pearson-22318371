@@ -1,0 +1,528 @@
+{
+  "dataset": "20 public broadband/network forum threads; 12 development and 8 second-phase challenge cases",
+  "case_access_dates": "Recorded separately for each case in cases/forum_cases.csv",
+  "summary": {
+    "development": {
+      "total_cases": 12,
+      "scored_in_scope_cases": 9,
+      "diagnostic_rules_covered": [
+        "R14",
+        "R16",
+        "R21",
+        "R25"
+      ],
+      "diagnostic_rules_covered_count": 4,
+      "diagnostic_rule_coverage_rate": 0.211,
+      "matched": 4,
+      "partly_matched": 0,
+      "no_diagnosis": 5,
+      "wrong": 0,
+      "scope_boundary_abstentions_with_mapped_answers": 2,
+      "records_with_no_mapped_answers": 0,
+      "excluded_insufficient_evidence": 1,
+      "exact_match_rate": 0.444
+    },
+    "holdout": {
+      "total_cases": 8,
+      "scored_in_scope_cases": 7,
+      "diagnostic_rules_covered": [
+        "R15",
+        "R19",
+        "R20"
+      ],
+      "diagnostic_rules_covered_count": 3,
+      "diagnostic_rule_coverage_rate": 0.158,
+      "matched": 6,
+      "partly_matched": 0,
+      "no_diagnosis": 1,
+      "wrong": 0,
+      "scope_boundary_abstentions_with_mapped_answers": 0,
+      "records_with_no_mapped_answers": 1,
+      "excluded_insufficient_evidence": 1,
+      "exact_match_rate": 0.857
+    },
+    "overall": {
+      "total_cases": 20,
+      "scored_in_scope_cases": 16,
+      "matched": 10,
+      "partly_matched": 0,
+      "no_diagnosis": 6,
+      "wrong": 0,
+      "diagnostic_rules_covered": [
+        "R14",
+        "R15",
+        "R16",
+        "R19",
+        "R20",
+        "R21",
+        "R25"
+      ],
+      "diagnostic_rules_covered_count": 7,
+      "diagnostic_rule_coverage_rate": 0.368,
+      "exact_match_rate": 0.625
+    }
+  },
+  "sensitivity_analysis": {
+    "case_id": "F15",
+    "inferred_answer_removed": "Q17",
+    "alternative_answer": "unknown (not mapped)",
+    "actual_diagnoses_without_inference": [],
+    "scored_cases": 16,
+    "exact_matches": 9,
+    "exact_match_rate": 0.5625,
+    "percentage": 56.25
+  },
+  "cases": [
+    {
+      "case_id": "F01",
+      "split": "development",
+      "platform": "BT Community",
+      "title": "Intermittent connection and speed",
+      "url": "https://community.bt.com/t5/BT-Fibre-broadband/Intermittent-connection-and-speed/td-p/2281895",
+      "expected": "insufficient_evidence",
+      "actual": [],
+      "status": "excluded: insufficient mapping evidence",
+      "evaluation_eligible": false,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01"
+      ],
+      "evidence_grade": "insufficient symptom detail for rule-level scoring",
+      "notes": "The thread reports a crackling telephone line and later line replacement, but does not state whether access is FTTC/ADSL or whether DSL synchronisation repeatedly drops. The service type and Q09 answer are therefore not inferred. Excluded from exact-match scoring because the necessary questionnaire facts are absent."
+    },
+    {
+      "case_id": "F02",
+      "split": "development",
+      "platform": "BT Community",
+      "title": "Connection Dropping and slow, terrible old cables",
+      "url": "https://community.bt.com/t5/BT-Fibre-broadband/Connection-Dropping-and-slow-terrible-old-cables/td-p/2356753",
+      "expected": "line_fault",
+      "actual": [],
+      "status": "no diagnosis",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01"
+      ],
+      "evidence_grade": "provider_engineer_report",
+      "notes": "The reference to copper cabling to a cabinet does not establish FTTC/VDSL rather than copper/ADSL. Q01 is therefore mapped as not sure. Although line noise is reported, Q10 is conditional on a known copper or part-fibre access type and is left unmapped. No DSL synchronisation loss is inferred."
+    },
+    {
+      "case_id": "F03",
+      "split": "development",
+      "platform": "ThinkBroadband",
+      "title": "Line fault VDSL",
+      "url": "https://forums.thinkbroadband.com/general/4771239-line-fault-vdsl.html?fpart=all&vc=1",
+      "expected": "line_fault",
+      "actual": [],
+      "status": "no diagnosis",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01",
+        "Q10"
+      ],
+      "evidence_grade": "reported_repair",
+      "notes": "VDSL and telephone-line symptoms are stated. The poster initially says there were no DSL drops; later broadband drops and SNR changes do not explicitly establish the DSL synchronisation event asked about by Q09. Q09 is therefore left unmapped."
+    },
+    {
+      "case_id": "F04",
+      "split": "development",
+      "platform": "BT Community",
+      "title": "Help Reporting Our FTTP Fault",
+      "url": "https://community.bt.com/t5/BT-Fibre-broadband/Help-Reporting-Our-FTTP-Fault/td-p/2390584",
+      "expected": "line_fault",
+      "actual": [],
+      "status": "no diagnosis",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01",
+        "Q05"
+      ],
+      "evidence_grade": "provider_test_and_restore",
+      "notes": "The reported red PON state is recorded as unclassified. It is not converted into LOS red, and it does not activate the documented PON/LOS fault rule."
+    },
+    {
+      "case_id": "F05",
+      "split": "development",
+      "platform": "BT Community",
+      "title": "Paid bill but service still restricted",
+      "url": "https://community.bt.com/t5/Bills-Packages/Paid-bill-but-service-still-restricted/td-p/2316683",
+      "expected": "account_issue",
+      "actual": [
+        "account_issue"
+      ],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {
+        "account_issue": [
+          "R14"
+        ]
+      },
+      "mapped_question_ids": [
+        "Q14"
+      ],
+      "evidence_grade": "provider_confirmed_restriction",
+      "notes": "A direct service restriction is recorded; household device scope is not required by the revised R14 rule."
+    },
+    {
+      "case_id": "F06",
+      "split": "development",
+      "platform": "BT Community",
+      "title": "Broadband drops and crackly line",
+      "url": "https://community.bt.com/t5/Archive-Staging/Broadband-drops-and-crackly-line/td-p/2197000",
+      "expected": "line_fault",
+      "actual": [],
+      "status": "no diagnosis",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01"
+      ],
+      "evidence_grade": "provider_fault_test",
+      "notes": "The connection technology and DSL synchronisation state are not stated. Q10 is conditional on a known copper/part-fibre connection, so no technology-specific answer is inferred."
+    },
+    {
+      "case_id": "F07",
+      "split": "development",
+      "platform": "ThinkBroadband",
+      "title": "BT OR",
+      "url": "https://forums.thinkbroadband.com/general/4418708-bt-or.html",
+      "expected": "line_fault",
+      "actual": [],
+      "status": "no diagnosis",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01"
+      ],
+      "evidence_grade": "reported_repair",
+      "notes": "The source supports a repaired telephone-line fault but does not identify the broadband access technology or DSL synchronisation state. No technology-specific question answers are inferred."
+    },
+    {
+      "case_id": "F08",
+      "split": "development",
+      "platform": "Reddit r/HomeNetworking",
+      "title": "Home router with reasonable SQM handling",
+      "url": "https://www.reddit.com/r/HomeNetworking/comments/1d6nv44/",
+      "expected": "congestion",
+      "actual": [
+        "congestion"
+      ],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {
+        "congestion": [
+          "R21"
+        ]
+      },
+      "mapped_question_ids": [
+        "Q20",
+        "Q21"
+      ],
+      "evidence_grade": "reported_fix_bufferbloat",
+      "notes": "The post explicitly links microstuttering during home streaming to concurrent household online-video use and reports that SQM removed the stuttering. Q20 and Q21 are supported; R21 is exercised. The post does not establish an ISP-side fault or general line-capacity problem."
+    },
+    {
+      "case_id": "F10",
+      "split": "development",
+      "platform": "Reddit r/HomeNetworking",
+      "title": "Ethernet connected has network connection but no internet",
+      "url": "https://www.reddit.com/r/HomeNetworking/comments/1ialbpu/ethernet_connected_has_network_connection_but_no/",
+      "expected": "out_of_scope",
+      "actual": [],
+      "status": "no diagnosis",
+      "evaluation_eligible": false,
+      "scope_boundary_abstention_with_mapped_answers": true,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q07",
+        "Q08"
+      ],
+      "evidence_grade": "explicit single-device Ethernet failure with Wi-Fi still available; reset procedure unspecified",
+      "notes": "The case is out of scope because it concerns one PC's Ethernet path and provides no evidence that the same device also fails on other Wi-Fi networks. The post does provide a wired/Wi-Fi comparison."
+    },
+    {
+      "case_id": "F11",
+      "split": "development",
+      "platform": "Reddit r/wifi",
+      "title": "wifi channels",
+      "url": "https://www.reddit.com/r/wifi/comments/ya0zvr/wifi_channels/",
+      "expected": "out_of_scope",
+      "actual": [],
+      "status": "no diagnosis",
+      "evaluation_eligible": false,
+      "scope_boundary_abstention_with_mapped_answers": true,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q07",
+        "Q08"
+      ],
+      "evidence_grade": "reported_channel_compatibility_fix",
+      "notes": "The model has no channel-compatibility question; this case is retained to reveal a boundary in the current question set."
+    },
+    {
+      "case_id": "F13",
+      "split": "holdout",
+      "platform": "BT Community",
+      "title": "What just happened at BT Broadband?",
+      "url": "https://community.bt.com/t5/BT-Fibre-broadband/What-just-happened-at-BT-Broadband/td-p/2448139",
+      "expected": "insufficient_evidence",
+      "actual": [],
+      "status": "excluded: insufficient mapping evidence",
+      "evaluation_eligible": false,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": true,
+      "matched_rules": {},
+      "mapped_question_ids": [],
+      "evidence_grade": "forum_status_page_report_not_mappable",
+      "notes": "The poster reports that BT acknowledged a service problem, but the thread does not establish that all household devices were affected and the wired connection failed, which are the prerequisites for Q12. The status-page report is retained as context only; no Q12 answer or ISP-outage diagnosis is mapped, and the case is excluded from exact-match scoring."
+    },
+    {
+      "case_id": "F14",
+      "split": "holdout",
+      "platform": "EE Community",
+      "title": "No LAN light on Openreach Nokia ONT",
+      "url": "https://community.ee.co.uk/t5/Broadband-Landline/No-LAN-light-on-Openreach-Nokia-ONT/m-p/1495913",
+      "expected": "no_diagnosis",
+      "actual": [],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01",
+        "Q05",
+        "Q07",
+        "Q25"
+      ],
+      "evidence_grade": "Explicit FTTP and Nokia ONT Power/PON observations with the Ethernet Port indicator off; temporary recovery after ONT restart; incoming cable seating not reported",
+      "notes": "Held-out FTTP case. The Nokia ONT showed steady-green Power and PON indicators with its Ethernet Port indicator off. The implementation gives the separate cable advice supported by BT, but this pattern is not converted into a fibre-link fault. The ONT restart restored service temporarily. Q06, which asks whether both ends of the incoming cable are firmly seated, was not answered and remains unknown, so R24 cannot fire. The subsequent power-supply change is self-reported and does not establish a confirmed root cause."
+    },
+    {
+      "case_id": "F15",
+      "split": "development",
+      "platform": "BT Community",
+      "title": "BT whole home wifi premium network intermittently won't allow devices to authenticate",
+      "url": "https://community.bt.com/t5/Home-setup-Wi-Fi-network/BT-whole-home-wifi-premium-network-intermittently-won-t-allow/td-p/2300332",
+      "expected": "wifi_authentication",
+      "actual": [
+        "wifi_authentication"
+      ],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {
+        "wifi_authentication": [
+          "R16"
+        ]
+      },
+      "mapped_question_ids": [
+        "Q07",
+        "Q16",
+        "Q17",
+        "Q27"
+      ],
+      "evidence_grade": "Explicit mixed-device authentication symptoms; Q17 other-device success is inferred rather than explicitly confirmed; underlying cause unconfirmed",
+      "notes": "Development case used to refine R16. The post describes password rejection despite the correct current password being entered and reports successful connections on other devices. Q17 is inferred from those mixed outcomes because simultaneous successful and failed connections are not expressly confirmed. Q27 records that the rejection persisted after re-entry. The inference is disclosed and tested in the sensitivity analysis; the reported root cause remains unconfirmed."
+    },
+    {
+      "case_id": "F16",
+      "split": "holdout",
+      "platform": "BT Community",
+      "title": "SmartHub 2, WiFi connection (authentication?) issues after moving home",
+      "url": "https://community.bt.com/t5/Home-setup-Wi-Fi-network/SmartHub-2-WiFi-connection-authentication-issues-after-moving/m-p/2469483",
+      "expected": "wifi_problem",
+      "actual": [
+        "wifi_problem"
+      ],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {
+        "wifi_problem": [
+          "R19",
+          "R20"
+        ]
+      },
+      "mapped_question_ids": [
+        "Q01",
+        "Q07",
+        "Q08",
+        "Q19"
+      ],
+      "evidence_grade": "explicit access type, wired/Wi-Fi contrast and reported interference-related resolution",
+      "notes": "Held-out case. The final post states that moving the adjacent network switch away from the hub restored Wi-Fi. Q19 is used for the nearby interference observation; the system identifies a wireless-path problem and does not infer a defective router."
+    },
+    {
+      "case_id": "F17",
+      "split": "development",
+      "platform": "Plusnet Community",
+      "title": "Noisy ADSL line, now quiet but line stablised at very slow speed",
+      "url": "https://community.plus.net/t5/Broadband/Noisy-ADSL-line-now-quiet-but-line-stablised-at-very-slow-speed/td-p/1985650",
+      "expected": "line_fault",
+      "actual": [
+        "line_fault"
+      ],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {
+        "line_fault": [
+          "R25"
+        ]
+      },
+      "mapped_question_ids": [
+        "Q01",
+        "Q10",
+        "Q20",
+        "Q26"
+      ],
+      "evidence_grade": "explicit ADSL type and recent line noise; DSL synchronisation loss not established; provider-side profile reset reported",
+      "notes": "Development case used to refine R25. The mapping distinguishes current dial tone (clear) from recent line noise; no DSL synchronisation loss is inferred. The reported support reset suggests a retained line-profile issue but does not prove a physical component fault."
+    },
+    {
+      "case_id": "F18",
+      "split": "holdout",
+      "platform": "Reddit r/techsupport",
+      "title": "my laptop refuses to connect to wifi 75% of the time",
+      "url": "https://www.reddit.com/r/techsupport/comments/1ekadao/my_laptop_refuses_to_connect_to_wifi_75_of_the/",
+      "expected": "device_fault",
+      "actual": [
+        "device_fault"
+      ],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {
+        "device_fault": [
+          "R15"
+        ]
+      },
+      "mapped_question_ids": [
+        "Q07",
+        "Q08",
+        "Q15"
+      ],
+      "evidence_grade": "One device fails across multiple Wi-Fi networks while Ethernet works; root cause not confirmed",
+      "notes": "Held-out device-specific case. The post explicitly says that the same laptop fails on multiple unrelated Wi-Fi networks, other devices connect, and Ethernet works. These observations exercise R15 and support the system device_fault category. Forum replies suggesting driver or adapter trouble are not treated as a verified root cause. This case replaces the former F18 duplicate mapping."
+    },
+    {
+      "case_id": "F19",
+      "split": "holdout",
+      "platform": "Reddit r/debian",
+      "title": "Network perpetually asking for password",
+      "url": "https://www.reddit.com/r/debian/comments/1xd2z6h/network_perpetually_asking_for_password/",
+      "expected": "wifi_authentication",
+      "actual": [],
+      "status": "no diagnosis",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q07",
+        "Q16",
+        "Q27"
+      ],
+      "evidence_grade": "poster_confirmed_user_input_error",
+      "notes": "Scored miss. The poster confirms that access returned after the correct password was entered. Q27 now captures that recovery. R16 requires the correct password to remain rejected, so the system abstains rather than diagnosing a persistent authentication fault. The case still has the expected forum label wifi_authentication, but a separate credential-entry outcome is not justified by one case."
+    },
+    {
+      "case_id": "F20",
+      "split": "holdout",
+      "platform": "BT Community",
+      "title": "WiFi issues, despite strong signal indication",
+      "url": "https://community.bt.com/t5/Home-setup-Wi-Fi-network/WiFi-issues-despite-strong-signal-indication/td-p/2422538",
+      "expected": "no_diagnosis",
+      "actual": [],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q07",
+        "Q08"
+      ],
+      "evidence_grade": "explicit in-scope Wi-Fi symptoms; insufficient wired comparison and no confirmed cause",
+      "notes": "Held-out abstention case. The system should not infer a wireless-path diagnosis without a working Ethernet comparison or sufficient corroborating evidence. A no-diagnosis result is the expected conservative outcome; it is counted as a scored abstention because explicit symptom answers are mapped."
+    },
+    {
+      "case_id": "F21",
+      "split": "holdout",
+      "platform": "Plusnet Community",
+      "title": "Hub One - 5GHz WiFi issue",
+      "url": "https://community.plus.net/t5/My-Router/Hub-One-5GHz-WiFi-issue/td-p/1696363",
+      "expected": "no_diagnosis",
+      "actual": [],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01",
+        "Q07"
+      ],
+      "evidence_grade": "Explicit band-specific symptoms; Ethernet and 2.4 GHz work, but the questionnaire cannot represent a 5 GHz-only failure",
+      "notes": "The source explicitly reports that Ethernet works and the 2.4 GHz band remains available. Q08 has no option for a 5 GHz-only failure while 2.4 GHz works: 'Ethernet works, Wi-Fi fails' would overstate the symptoms. Q08 is therefore left unmapped rather than recorded as untested. The case is retained as a questionnaire coverage limitation."
+    },
+    {
+      "case_id": "F22",
+      "split": "holdout",
+      "platform": "Reddit r/HomeNetworking",
+      "title": "ASUS router randomly drops internet connection for 300 seconds - two different models, same problem",
+      "url": "https://www.reddit.com/r/HomeNetworking/comments/1tyqwed/asus_router_randomly_drops_internet_connection/",
+      "expected": "no_diagnosis",
+      "actual": [],
+      "status": "matched",
+      "evaluation_eligible": true,
+      "scope_boundary_abstention_with_mapped_answers": false,
+      "no_mapped_answers": false,
+      "matched_rules": {},
+      "mapped_question_ids": [
+        "Q01",
+        "Q07",
+        "Q08"
+      ],
+      "evidence_grade": "explicit shared wired/Wi-Fi interruption; access technology and cause not established",
+      "notes": "Untouched held-out case. The system receives the reported shared failure but has no access technology, DSL synchronisation result, provider-confirmed outage or corroborating local-outage evidence. It should abstain rather than label a provider or line fault."
+    }
+  ],
+  "method_notes": [
+    "Mappings use stated facts where available. F15 is a disclosed exception: Q17 is inferred from mixed device outcomes because the thread does not confirm simultaneous successful and failed connections. a sensitivity result leaves Q17 unknown.",
+    "F01 reports a later line replacement but omits access type and explicit DSL synchronisation loss. it is excluded from scoring.",
+    "Reported fixes are used as case labels. ",
+    "An explicit expected no_diagnosis label is scored as a correct abstention only when mapped in scope symptoms are present and the case evidence does not support one of the available diagnoses.",
+    "Threads with no mapped answers are recorded as no data examples and do not demonstrate that the engine meaningfully abstained.",
+    "Development cases informed selected question/ rule refinements. The 8 second phase challenge cases (CSV split value `holdout`) were not used to alter anyy rules or answer mappings.",
+    "thee second phase case set was reviewed for mapped answer overlap. F14 and F18 replaced cases after this review, so the set is a second phase challenge rather than a blind or fully independent holdout.",
+    "F19 remains a scored miss: the post confirms that access returned after the correct password was entered. Q27 records this recovery, and R16 requires the correct password to remain rejected after re entry. The system abstains rather than assigning a persistent authentication fault. A separate credential-entry outcome is not justified by one case.",
+    "The forum set is a convenience sample and is used to challenge selected rules andd not estimate population performance."
+  ]
+}

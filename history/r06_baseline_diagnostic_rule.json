@@ -1,0 +1,15 @@
+{
+  "id": "R07",
+  "diagnosis": "line_fault",
+  "priority": 2,
+  "conditions": {
+    "line_fault_evidence": true
+  },
+  "explanation": "A paired set of line observations has formed an intermediate line-fault evidence pattern.",
+  "sources": [
+    "S01",
+    "S02",
+    "S04",
+    "S05"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "R06",
+  "derive": "line_fault_evidence",
+  "any_of": [
+    {
+      "broadband_light": "abnormal",
+      "shared_connection_failure": true
+    },
+    {
+      "dial_tone": "poor",
+      "dsl_sync_drops": true
+    },
+    {
+      "microfilter_status": "missing",
+      "broadband_light": "abnormal"
+    }
+  ],
+  "explanation": "At least one paired set of line observations is present: abnormal broadband indication with a shared failure, poor dial tone with DSL synchronisation loss, or a missing required microfilter with an abnormal broadband indicator.",
+  "sources": [
+    "S01",
+    "S02",
+    "S04",
+    "S05"
+  ]
+}
