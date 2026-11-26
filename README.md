@@ -1,6 +1,6 @@
 # Home Internet Fault Diagnosis
 
-This is my full COM6008 Coursework 1 project repository. ***If you want to see a COMMIT history view the other Github link.***
+This is my full COM6008 Coursework 1 project repository. **If you want to see a COMMIT history view the other Github link.**
 
 It is a Python command-line expert system that guides a householder through basic broadband checks and helps narrow down possible fault areas. It asks about the type of connection, which devices are affected, Ethernet and Wi-Fi results, equipment indicators and provider status. It then uses frames and IF-THEN rules to suggest possible explanations and next steps. The results are guidance based on the answers, not confirmed engineering diagnoses.
 
